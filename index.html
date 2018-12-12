@@ -2,10 +2,10 @@
 title: JSXGraph Conference
 description: Coming soon...
 background_image: /uploads/2015/campus-luftbild.jpg
-featured_brews:
-  - label_image: /uploads/beers/label-1.png
-    title: Count Chocula
-    link: #
+sponsors:
+  - label_image: /uploads/Sponsors/eu_flag_co_funded_pos_rgb_left.jpg
+    title: Erasmus+
+    link: https://www.erasmusplus.de/
  
 
 _options:
@@ -21,7 +21,7 @@ _options:
 
 <h3 class="editable">Our Sponsors:</h3>
 <div class="gallery">
-	{% for feature in page.featured_brews %}
+	{% for feature in page.sponsors %}
 		<a href="{% include relative-src.html src=feature.link %}">
 			<div class="inner-wrapper">
 				<img src="{% include relative-src.html src=feature.label_image %}" alt="{{ feature.title }}">
@@ -33,4 +33,3 @@ _options:
 
 
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
